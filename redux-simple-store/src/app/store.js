@@ -1,4 +1,4 @@
-/ Import createStore and combineReducers here.
+// Import createStore and combineReducers here.
 import { createStore, combineReducers } from 'redux'
 
 // Import the slice reducers here.
@@ -9,6 +9,6 @@ import { currencyFilterReducer } from '../features/currencyFilter/currencyFilter
  const rootReducer = combineReducers({
   inventory: inventoryReducer, 
   cart: cartReducer,
-  currency: currencyReducer,
+  currencyFilter: currencyFilterReducer,
 })
 export const store = createStore(rootReducer);
